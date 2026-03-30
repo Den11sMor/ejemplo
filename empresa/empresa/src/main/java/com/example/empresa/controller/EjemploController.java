@@ -11,6 +11,12 @@ public class EjemploController {
     public  String holaMundo(){
         return "Hola a todos....!!!";
     }
+
+    @GetMapping("/h1")
+    public  String h1World(){
+        return "Hello everyboby....!!!";
+    }
+
     @PostMapping("/hola")
     public ResponseEntity<String> recibirSaludo(@RequestBody Map<String, String> boby){
         String nombre = boby.get("nombre");
